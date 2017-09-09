@@ -1,6 +1,6 @@
-# Welcome to my Portfolio!
+# Welcome to My Portfolio!
 
-> This application was built with Rails 5.
+> This application was built with Rails 5
 
 ### Features
 
