@@ -9,15 +9,7 @@
     <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
   </p>
   <% end %>
-
-  <p class="blog-post-meta"> 
-    
-  </p>
-
-  <p class="blog-post-meta"> 
-    
-  </p>
-
+  
   <p>
     <%= blog.body %>
   </p>
