@@ -57,3 +57,5 @@ gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+gem "font-awesome-rails"
+gem 'kaminari', '~> 0.16.3'
