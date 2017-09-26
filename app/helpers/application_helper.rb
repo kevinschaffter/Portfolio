@@ -14,12 +14,4 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
-
-  def nav_helper style, tag_type
-nav_links = <<NAV
-<#{tag_type}><a href="#{root_path}" class="#{style}">Home</a><#{tag_type}>
-NAV
-
-  nav_links.html_safe
-  end
 end
