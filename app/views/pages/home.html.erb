@@ -1,13 +1,7 @@
-<h1>Hello <%= current_user.first_name %> </h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Blog Posts</h1>
-<%= @posts.inspect %>
-
-<h1>Skills</h1>
-<%= @skills.inspect %>
-
-<hr>
-
-
-
+<div class="inner cover">
+  <h1 class="cover-heading animated fadeInUp">Welcome.</h1>
+  <p class="lead animated fadeInUp">I am driven by finding... </p>
+  <p class="lead animated fadeInUp">
+    <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary" %>
+  </p>
+</div>
