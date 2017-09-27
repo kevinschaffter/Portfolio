@@ -29,7 +29,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -185,6 +184,27 @@ body {
 .masthead-brand a:hover {
   text-decoration: none;
 }
+
+#background {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX (0%) translateY(0%);
+  transform: translateX (0%) translateY(0%);
+  background: image-url('Profile.JPG') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: white;
+}
+
+
 
 
 
