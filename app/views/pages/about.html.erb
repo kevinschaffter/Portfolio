@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-md-4">
       
-        <%= image_tag "Profile.JPG", width: 250, alt: "Profile Image" %>
+        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="kevin-schaffter"><a class="LI-simple-link" href='https://www.linkedin.com/in/kevin-schaffter?trk=profile-badge'>Kevin Schaffter</a></div>
 
         <div class="skills">
           <% @skills.each do |skill| %>
@@ -34,28 +34,18 @@
 
       <div class="col-md-8">
 
-        <p> I am driven by building highly intuitive web applications with a strong focus on user experience and beautiful design. I specialize in full stack Ruby/Rails development.  With a background in the arts and music, I also bring a keen design sensibility to all of my projects.
+        <h2 class="overview-text">Overview</h2>
+
+        <p> I am driven by building highly intuitive web applications with a strong focus on user experience and design. I specialize in full-stack Ruby on Rails development.  With a college background in the arts and music, I also bring a keen design sensibility to every project.
         </p>
 
-        <p>I am the creator of the website AuditionCafe.com, a classical music job board that simplifies the process of finding and posting auditions. I am also the founder/director of MusAid.com, a 501(c)3 summer program that supports musical institutions around the world.
+        <p>I am the creator of the website <%= link_to "AuditionCafe.com", "https://AuditionCafe.com" %>, a classical music job board that simplifies the process of finding and posting music auditions. I am also the founder/director of <%= link_to "MusAid.org", "http://musaid.org" %>, a 501(c)3 summer program that supports musical institutions around the world.
         </p>
 
         <p>
-        I was born in Thailand and have spent the majority of my life living overseas in Vietnam, Laos, India, Kyrgyzstan and Romania.  I am currently based in beautiful Miami Beach, Florida.</p>
+         I was born in Thailand and have spent the majority of my life living overseas in Vietnam, Laos, India, Kyrgyzstan and Romania.  I am currently based in beautiful Miami Beach, Florida.</p>
         
         <p>
-          <button
-            class='btn btn-primary'
-            type='button'
-            data-toggle='collapse'
-            data-target='#jobHistory'
-            aria-expanded='false'
-            aria-controler='jobHistory'
-          >
-    
-          Job History
-          </button>
-
           <button
             class='btn btn-primary'
             type='button'
@@ -64,35 +54,59 @@
             aria-expanded='false'
             aria-controler='education'
           >
-          
+    
           Education
+          </button>
+
+          <button
+            class='btn btn-primary'
+            type='button'
+            data-toggle='collapse'
+            data-target='#bio'
+            aria-expanded='false'
+            aria-controler='bio'
+          >
+          
+          Bio Information
           </button>
 
         </p>
 
         <p>
-          <div class="collapse" id="jobHistory">
+          <div class="collapse" id="bio">
             <div class="card card-block">
-              Jobsss
-            </div>
+              <p><span>Citizenship:</span> American, Canadian &amp; Thai 
+              </p>
 
-            <div class="card card-block">
-              Jobsss
+              <br>
+
+              <p><span>Place of birth:</span> Bangkok, Thailand
+              </p>
+
+              <br>
+
+              <p><span>Countries where lived:</span> Thailand (1989-1993), Vietnam (1993-1996), Romania (1996-2002), India (2002-2005), USA (2005-Present)
+              </p>
+
+              <br>
+
+              <p><span>Travel:</span> Argentina, Belize, Bolivia, Bulgaria, Cambodia, Canada, China &amp; Hong Kong, Colombia, Cyprus, Czech Republic, Egypt, El Salvador, France, Germany, Guatemala, Haiti, Italy, India, Ireland, Israel, Kyrgyzstan, Laos, Latvia, Malaysia, The Netherlands, Nicaragua, Norway, Palestine, Peru, The Philippines, Portugal, Romania, Spain, Sri Lanka, Switzerland, Taiwan, Thailand, Turkey, United Kingdom, United States of America, Uruguay and Vietnam.
+              </p>
+
             </div>
-              
           </div>
 
             <div class="collapse" id="education">
               <div class="card card-block">
-                Yale University - MMus
+                <p><span>Yale University</span> - MMus</p>
               </div>
 
               <div class="card card-block">
-                Indiana University - BMus
+                <p><span>Indiana University</span> - BMus</p>
               </div>
 
               <div class="card card-block">
-               <em> Courses: </em>
+               <span> Courses: </span>
                 <div>Learn Ruby the Hard Way - Zed A. Shaw</div>
                 <div>Disecting Ruby on Rails - DevCamp</div>
               </div>
@@ -108,5 +122,3 @@
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 
-<!-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="kevin-schaffter"><a class="LI-simple-link" href='https://www.linkedin.com/in/kevin-schaffter?trk=profile-badge'>Kevin Schaffter</a></div>
- -->

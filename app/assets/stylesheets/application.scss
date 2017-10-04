@@ -255,6 +255,12 @@ h6, .h6 {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 5px 7px 5px 7px;
+
+}
+
+.card-block p {
+  margin-bottom: 0px;
 }
 
 .button-spacing {
@@ -295,14 +301,28 @@ opacity: 1;
 
 
 .home-header {
-  font-size: 52px;
+  font-size: 54px;
   margin-bottom: 20px;
 }
 
 .home-text {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 400px;
 }
 
+.home-subtitle {
+  font-family: Merriweather;
+}
+
+/* About Page */
+
+.overview-text {
+  margin-bottom: 40px;
+}
+
+.card-block span {
+  font-weight: 600;
+}
 
 
 
