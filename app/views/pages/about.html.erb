@@ -1,14 +1,87 @@
-<div class="row">
-  <div class="col-md-4">
-  
-    <%= image_tag "Profile.JPG", width: 300, alt: "Profile Image" %>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
 
-  </div>
+    <hr>
 
-  <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-4">
+      
+        <%= image_tag "Profile.JPG", width: 300, alt: "Profile Image" %>
 
-    <h1>Pages#about</h1>
-    <p>Find me in app/views/pages/about.html.erb</p>
+      </div>
 
+      <div class="col-md-8">
+
+        <p>Find me in app/views/pages/about.html.erb</p>
+        
+
+
+        <p>
+          <button
+            class='btn btn-primary'
+            type='button'
+            data-toggle='collapse'
+            data-target='#jobHistory'
+            aria-expanded='false'
+            aria-controler='jobHistory'
+          >
+    
+          Job History
+          </button>
+
+          <button
+            class='btn btn-primary'
+            type='button'
+            data-toggle='collapse'
+            data-target='#education'
+            aria-expanded='false'
+            aria-controler='education'
+          >
+          
+          Education
+          </button>
+
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Jobsss
+            </div>
+
+            <div class="card card-block">
+              Jobsss
+            </div>
+              
+            </div>
+
+            <div class="collapse" id="education">
+              <div class="card card-block">
+                Yale
+              </div>
+
+              <div class="card card-block">
+                Jobsss
+              </div>
+                
+              </div>
+
+            </div>
+
+
+
+
+
+          
+        </p>
+      </div>
+    </div>
   </div>
 </div>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+<!-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="kevin-schaffter"><a class="LI-simple-link" href='https://www.linkedin.com/in/kevin-schaffter?trk=profile-badge'>Kevin Schaffter</a></div>
+ -->
