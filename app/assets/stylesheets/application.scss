@@ -15,11 +15,16 @@ a:hover {
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:focus, {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
 }
 
 
@@ -37,6 +42,11 @@ body {
 body {
   color: #fff;
   text-align: center;
+  font-size: 1.04em;
+  
+}
+
+.shadow-text {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
@@ -236,11 +246,18 @@ h6, .h6 {
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 38px;
+  margin-bottom: 8%;
+  margin-top: 8%;
 }
 
 .profile_img {
   border: 1px solid gray;
+}
+
+.nav-masthead .nav-link {
+  font-family: 'Open Sans';
+  font-weight: 600;
 }
 
 .app-nav span {
@@ -317,11 +334,24 @@ opacity: 1;
 /* About Page */
 
 .overview-text {
-  margin-bottom: 35px;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+  color: rgb(78, 141, 225);
 }
 
 .card-block span {
   font-weight: 600;
+}
+
+.about-btn {
+  background-color: rgba(78, 141, 225, 1);
+  border: 0px;
+  margin-right: 10px;
+}
+
+.about-btn:hover {
+  background-color: rgba(78, 141, 225, 0.9);
 }
 
 
