@@ -15,12 +15,11 @@ a:hover {
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus, {
+.btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
-  cursor: pointer;
 }
 
 .btn {
@@ -42,7 +41,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  font-size: 1.04em;
+  font-size: 1.03em;
   
 }
 
@@ -247,8 +246,8 @@ h6, .h6 {
 
 .app-card-container > .card {
   padding: 38px;
-  margin-bottom: 8%;
-  margin-top: 8%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .profile_img {
@@ -308,7 +307,6 @@ h6, .h6 {
   background: #ef9c53;
   border: none;
   opacity: .85;
-
 }
 
 .home-btn:hover {
@@ -353,14 +351,3 @@ opacity: 1;
 .about-btn:hover {
   background-color: rgba(78, 141, 225, 0.9);
 }
-
-
-
-
-
-
-
-
-
-
-
