@@ -246,6 +246,7 @@ h6, .h6 {
 
 .app-card-container > .card {
   padding: 38px;
+  padding-bottom: 30px;
   margin-bottom: 10%;
   margin-top: 10%;
 }
@@ -272,6 +273,7 @@ h6, .h6 {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px 7px 5px 7px;
+  background: rgba(83, 145, 221, 0.04);
 
 }
 
@@ -284,7 +286,7 @@ h6, .h6 {
 }
 
 .skill {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -326,7 +328,8 @@ opacity: 1;
 }
 
 .home-subtitle {
-  font-family: Merriweather;
+  font-family: 'Open Sans';
+  font-size: 23px;
 }
 
 /* About Page */
@@ -350,4 +353,19 @@ opacity: 1;
 
 .about-btn:hover {
   background-color: rgba(78, 141, 225, 0.9);
+}
+
+.skill h5 {
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.school-logo {
+  margin-right: 7px;
+  margin-bottom: 2px;
+}
+
+.courses {
+  margin-bottom: 5px;
 }
