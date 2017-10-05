@@ -13,9 +13,9 @@
 
         <em> <%= @portfolio_item.subtitle %> </em>
 
-        <p> <%= @portfolio_item.body %> </p>
+        <p> <%= markdown @portfolio_item.body %> </p>
 
-        <h3>Technologies Used:</h3>
+        <h3 class="tech-used">Technologies Used:</h3>
 
         <% @portfolio_item.technologies.each do |t| %>
 
