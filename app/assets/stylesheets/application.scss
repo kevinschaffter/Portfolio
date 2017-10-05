@@ -306,14 +306,12 @@ h6, .h6 {
   border-radius: 1;
   text-shadow: none;
   padding: 12px; 
-  background: #ef9c53;
+  background: rgba(239, 156, 83, 1);
   border: none;
-  opacity: .85;
 }
 
 .home-btn:hover {
-background:  #ef9c53;
-opacity: 1;
+  background: rgba(239, 156, 83, 0.85);
 }
 
 

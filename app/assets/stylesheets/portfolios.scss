@@ -6,6 +6,19 @@ body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Merriweather', serif;
+}
+
+body p {
+  font-family: 'Open Sans';
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -66,3 +79,14 @@ footer p {
 .portfolio-container {
   padding-top: 30px;
 }
+
+.btn-primary {
+  background-color: rgba(78, 141, 225, 1);
+  border: 0px;
+  margin-right: 10px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(78, 141, 225, 0.9);
+}
+
