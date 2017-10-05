@@ -6,11 +6,13 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
-  <META name="keywords" content= "<%= @seo_keywords %>" />
+    <META name="keywords" content= "<%= @seo_keywords %>" />
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700|Montserrat:400,500,600" rel="stylesheet">
 
-  <%= favicon_link_tag 'favicons/favicon.ico' %>
+    <%= stylesheet_link_tag 'application', 'animation', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

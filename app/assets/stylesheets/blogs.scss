@@ -13,19 +13,30 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', "Times New Roman", Times, serif;
   color: #555;
+  text-align: left;
 }
 
+
 h1, .h1,
-h2, .h2,
 h3, .h3,
+h2, .h2,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
+  font-family: 'Montserrat', serif;
+  color: #34495e;
+}
+
+h2 a {
+  color: rgba(83, 145, 221, 1);
+}
+
+
+h2 a:hover {
+  color: rgba(83, 145, 221, 0.9);
+  text-decoration: none;
 }
 
 
@@ -44,7 +55,7 @@ h6, .h6 {
 
 .blog-masthead {
   margin-bottom: 3rem;
-  background-color: #428bca;
+  background-color: #34495e;
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
@@ -53,31 +64,45 @@ h6, .h6 {
 .nav-link {
   position: relative;
   padding: 1rem;
-  font-weight: 500;
-  color: #cdddeb;
+  font-weight: 600;
+  color: rgba(255,255,255,.5);
+  text-transform: uppercase;
+  font-size: 14px;
 }
+
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: #ea995d;
   background-color: transparent;
 }
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
-  color: #fff;
+  color: #ea995d;
 }
-.nav-link.active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
+
+
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: #ea995d;
+  color: #ea995d;
+  transition: width .5s ease, background-color .5s ease;
+  opacity: 0.4;
+}
+
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: #ea995d;
+  color: #ea995d
 }
 
 
@@ -98,6 +123,7 @@ h6, .h6 {
 .blog-description {
   font-size: 1.1rem;
   color: #999;
+  margin-top: 12px;
 }
 
 @media (min-width: 40em) {
@@ -147,10 +173,25 @@ h6, .h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  font-family: 'Open Sans';
+  font-size: 35px;
+  font-weight: 600;
 }
+
 .blog-post-meta {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.0rem;
   color: #999;
+  font-size: 0.8em
+}
+
+.topics-btn {
+  background-color: rgba(239, 156, 83, 1.5);
+  border: 0px;
+  margin-right: 10px;
+}
+
+.topics-btn:hover {
+  background-color: rgba(239, 156, 83, 0.85);
 }
 
 
@@ -198,4 +239,7 @@ h6, .h6 {
  .blog-sidebar-source {
   margin-top: 20px;
  }
+
+
+
 

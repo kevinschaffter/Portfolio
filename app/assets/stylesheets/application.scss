@@ -27,6 +27,11 @@ a:hover {
 }
 
 
+.contact-btn > a {
+  color: #fff !important;
+}
+
+
 /*
  * Base structure
  */
@@ -55,7 +60,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -97,8 +102,8 @@ h6, .h6 {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 600;
-  font-size: 14px;
-  color: rgba(255,255,255,.5);
+  font-size: 15px;
+  color: rgba(255,255,255,.8);
   background-color: transparent;
 
   font-family: 'Open Sans';
@@ -110,6 +115,7 @@ h6, .h6 {
   position: relative;
   padding-bottom: 3px;
   color: #ea995d;
+
 }
 .sliding-middle-out:after {
   content: '';
@@ -124,14 +130,15 @@ h6, .h6 {
 
 .sliding-middle-out:hover:after {
   width: 100%;
-  background: #ea995d;
-  color: #ea995d
+  background: #ea995d !important;
+  color: #ea995d;
+  height: 5px;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: #ea995d;
-  color: #ea995d;
+  color: #fff;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -262,7 +269,7 @@ h6, .h6 {
 
 .tech-news > .card {
   padding: 30px;
-  opacity: 0.5;
+  opacity: 0.75;
   
 }
 
@@ -288,7 +295,7 @@ h6, .h6 {
 }
 
 .app-card-container a {
-  color: blue;
+  color: #5891cd;
 }
 
 .card-block {
@@ -345,19 +352,20 @@ h6, .h6 {
 .home-text {
   font-size: 18px;
   font-weight: 400px;
+  font-family: 'Open Sans';
 }
 
 .home-subtitle {
-  font-family: 'Open Sans';
-  font-size: 23px;
+  font-family: Montserrat;
+  font-size: 30px;
 }
 
 /* About Page */
 
 .overview-text {
   font-size: 42px;
-  margin-bottom: 20px;
-  font-family: 'Open Sans';
+  margin-bottom: 30px;
+  font-family: 'Montserrat';
   color: rgb(78, 141, 225);
 }
 
@@ -366,13 +374,13 @@ h6, .h6 {
 }
 
 .about-btn {
-  background-color: rgba(78, 141, 225, 1);
+  background-color: rgba(239, 156, 83, 1);
   border: 0px;
   margin-right: 10px;
 }
 
 .about-btn:hover {
-  background-color: rgba(78, 141, 225, 0.9);
+  background-color: rgba(239, 156, 83, .85);
 }
 
 .skill h5 {
@@ -389,3 +397,26 @@ h6, .h6 {
 .courses {
   margin-bottom: 5px;
 }
+
+/* Tech News */
+
+.tech-title {
+  margin-bottom: 70px;
+}
+
+
+/* Contact Page */
+
+.contact-heading {
+  color: #5391dd;
+}
+
+.contact-sub {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.contact-info {
+  color: #2c3b3f;
+}
+
