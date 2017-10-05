@@ -32,11 +32,10 @@ li {
 }
 
 .jumbotron {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   background-color: #fff;
-  font-size: 3em;
 }
 
 .jumbotron p:last-child {
@@ -46,6 +45,7 @@ li {
 .jumbotron-heading {
   font-weight: 600;
   color: #34495e;
+  margin-bottom: 20px;
 }
 
 .jumbotron .container {
@@ -113,5 +113,5 @@ footer p {
 }
 
 .portfolio-title {
-  color: #364a5d;
+  color: #364a5d !important;
 }
