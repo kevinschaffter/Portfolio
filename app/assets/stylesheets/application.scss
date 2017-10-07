@@ -413,7 +413,7 @@ h6, .h6 {
 
 
 .home-text {
-  font-size: 13.9px;
+  font-size: 17px;
   font-weight: 400px;
   font-family: 'Open Sans';
 }
@@ -469,6 +469,13 @@ h6, .h6 {
  text-decoration: none;
 }
 
+@media (max-width: 447px) {
+  .about-btn:last-child {
+    margin-top: 16px;
+    width: 98px;
+  }
+}
+
 .skill h5 {
   font-family: 'Open Sans';
   text-transform: uppercase;
@@ -491,6 +498,11 @@ h6, .h6 {
   margin-top: 10%;
 }
 
+@media (max-width: 375px) {
+  .tech-title {
+    font-size: 30px;
+  }
+}
 
 /* Contact Page */
 
