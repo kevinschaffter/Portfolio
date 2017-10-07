@@ -15,7 +15,7 @@
 
         <p> <%= markdown @portfolio_item.body %> </p>
 
-        <p> <%= @portfolio_item.URL %> </p>
+        <%= link_to "Visit Site", @portfolio_item.URL, class: 'btn btn-md btn-primary' %>
 
         <h3 class="tech-used">Technologies Used:</h3>
 
