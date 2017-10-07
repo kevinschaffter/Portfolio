@@ -179,6 +179,7 @@ h6, .h6 {
 
 .mastfoot {
   color: rgba(255,255,255,.5);
+  z-index: -1;
 }
 
 
@@ -401,8 +402,8 @@ h6, .h6 {
 /* Tech News */
 
 .tech-title {
-  margin-bottom: 30px;
-  margin-top: 7%;
+  margin-bottom: 7%;
+  margin-top: 10%;
 }
 
 
