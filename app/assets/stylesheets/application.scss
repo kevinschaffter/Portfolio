@@ -257,7 +257,15 @@ h6, .h6 {
 
 .app-footer {
   color: white;
+  font-size: 13.5px;
 }
+
+@include media-breakpoint-up(lg) {
+  .app-footer {
+    font-size: 16px;
+  }
+}
+
 
 .tech-news {
   color: black;
@@ -364,7 +372,7 @@ h6, .h6 {
 
 @include media-breakpoint-up(lg) {
   .home-header {
-    font-size: 3.6em;
+    font-size: 3.4em;
   }
 }
 
@@ -388,16 +396,33 @@ h6, .h6 {
 
 @include media-breakpoint-up(lg) {
   .home-subtitle {
-    font-size: 1.7em;
+    font-size: 1.8em;
   }
 }
 
 
-
 .home-text {
-  font-size: 18px;
+  font-size: 13.9px;
   font-weight: 400px;
   font-family: 'Open Sans';
+}
+
+@include media-breakpoint-up(sm) {
+  .home-text {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .home-text {
+    font-size: 17px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .home-text {
+    font-size: 19px;
+  }
 }
 
 
