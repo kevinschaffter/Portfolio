@@ -4,7 +4,9 @@
     <div class="row">
       <div class="col-md-4">
       
-       <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="kevin-schaffter"><a class="LI-simple-link" href='https://www.linkedin.com/in/kevin-schaffter?trk=profile-badge'>Kevin Schaffter</a></div>
+       <div class="profile-pic">
+         <%= image_tag 'Profile.JPG', width: 300 %>
+       </div>
 
         <div class="skills">
           <% @skills.each do |skill| %>
@@ -65,6 +67,10 @@
           >
           
           Bio Information
+          </button>
+
+          <button class="btn btn-primary about-btn">
+            <%= link_to "Linked In", "https://www.linkedin.com/in/kevin-schaffter", target: :_blank %>
           </button>
 
         </p>
