@@ -1,5 +1,5 @@
 <div class="col-md-4">
-  <div class="card" data-id="<%= portfolio_item.id %>" >
+  <div class="card portfolio-card" data-id="<%= portfolio_item.id %>" >
     <%= link_to portfolio_show_path(portfolio_item) do %>
       <%= image_tag portfolio_item.thumb_image, width: '100%' unless portfolio_item.thumb_image.nil? %>
     <% end %>
