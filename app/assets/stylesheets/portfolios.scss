@@ -72,9 +72,13 @@ li {
 }
 
 .card-text {
-  font-size: 85%;
+  font-size: 14px;
   -align: center;
   margin-top: 12px;
+}
+
+.card-text span {
+  font-weight: 600;
 }
 
 footer {
