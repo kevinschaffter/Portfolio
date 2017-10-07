@@ -122,10 +122,11 @@ footer p {
 }
 
 .tech-used {
-  font-family: 'Open Sans';
+  font-family: Montserrat;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
+  color: #354c5d;
 }
 
 .portfolio-container {
@@ -137,7 +138,7 @@ footer p {
 }
 
 .tech-used ~ li {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   margin-top: 15px;
 }
 
@@ -156,4 +157,12 @@ footer p {
     margin-right: 0px;
     margin-top: 10px;
   }
+}
+
+.list-group-item {
+  font-weight: 600;
+  width: 55%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 40px;
+  text-align: center;
 }
