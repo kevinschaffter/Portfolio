@@ -392,7 +392,7 @@ h6, .h6 {
   font-family: Montserrat;
   font-size: 1.5em;
   text-align: left;
-  margin-left: 5%;
+  margin-left: 32.5%;
 }
 
 @include media-breakpoint-up(sm) {
@@ -443,6 +443,10 @@ h6, .h6 {
 
 
 /* About Page */
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
 
 .overview-text {
   font-size: 42px;
