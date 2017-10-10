@@ -392,28 +392,28 @@ h6, .h6 {
   font-family: Montserrat;
   font-size: 1.5em;
   text-align: left;
-  margin-left: 6%;
+  margin-left: 5%;
 }
 
 @include media-breakpoint-up(sm) {
   .home-subtitle {
     font-size: 1.55em;
     text-align: left;
-    margin-left: 32%;
+    margin-left: 32.5%;
   }
 }
 
 @include media-breakpoint-up(md) {
   .home-subtitle {
     font-size: 1.6em;
-    margin-left: 32%;
+    margin-left: 32.5%;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .home-subtitle {
     font-size: 1.8em;
-    margin-left: 32%;
+    margin-left: 32.5%;
   }
 }
 
