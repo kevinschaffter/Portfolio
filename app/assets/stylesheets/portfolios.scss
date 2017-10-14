@@ -33,6 +33,10 @@ li {
     background: #34495e !important;
 }
 
+.bg-dark {
+  background-color: #34495e !important;
+}
+
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -120,7 +124,7 @@ footer p {
 }
 
 .btn-primary:hover {
-  background-color: rgba(78, 141, 225, 0.9);
+  background-color: rgba(78, 141, 225, 0.9) !important;
 }
 
 .tech-used {

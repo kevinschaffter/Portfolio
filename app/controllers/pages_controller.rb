@@ -9,9 +9,11 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @skills = Skill.all
   end
 
   def tech_news
     @tweets = SocialTool.twitter_search
+    @skills = Skill.all
   end
 end
