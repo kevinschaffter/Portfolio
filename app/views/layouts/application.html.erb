@@ -25,16 +25,21 @@
   <div class="site-wrapper-inner">
     <div class="cover-container">
 
-      <%= video_tag(
-        'BackgroundVideo.mp4', 
+
+    <div class="view hm-black-light">
+      <%= image_tag(
+        'Home.jpeg', 
         id: 'background',
-        autoplay: true,
-        loop: true,
-        muted: true,
       ) 
       %>
+      <div class="mask">
+        
+      </div>
+    </div>
 
       <%= render "shared/application_nav" %>
+
+      <%= render "shared/about_modal" %>
 
       <%= yield %>
 

@@ -5,9 +5,8 @@
   <p class="lead animated fadeInUp home-text shadow-text">Miami based full-stack developer available for hire</p>
   <p class="lead animated fadeInUp">
 
-    <%= link_to "About me", about_me_path, class: 'btn btn-primary home-btn', 'data-toggle': 'modal', 'data-target': '#aboutModal' %>
-
-    <%= render 'shared/about_modal' %>
+    <%= link_to "About me", about_me_path, class: 'btn home-btn', 'data-toggle': 'modal', 'data-target': '#aboutModal' %>
+    <%= link_to "Portfolio", portfolios_path, class: 'btn portfolio-btn' %>
 
   </p>
 </div>
