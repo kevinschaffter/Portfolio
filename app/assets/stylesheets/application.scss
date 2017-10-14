@@ -469,24 +469,7 @@ h6, .h6 {
   font-weight: 600;
 }
 
-.about-btn {
-  background-color: rgba(239, 156, 83, 1);
-  border: 0px;
-  margin-right: 10px;
-}
 
-.about-btn:hover {
-  background-color: rgba(239, 156, 83, .85);
-}
-
-.about-btn a {
- color: #fff;
-}
-
-.about-btn a:hover {
- color: #fff;
- text-decoration: none;
-}
 
 @media (max-width: 447px) {
   .about-btn:last-child {
@@ -538,3 +521,20 @@ h6, .h6 {
   color: #364a5d;
 }
 
+/* MODAL */
+
+.modal-body {
+  padding: 33px;
+}
+
+.modal-header {
+  padding: 10px;
+}
+
+.close-btn {
+  margin-right: 10px;
+}
+
+.progress {
+  height: 9px;
+}
