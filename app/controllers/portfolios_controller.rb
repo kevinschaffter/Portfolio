@@ -52,6 +52,7 @@ class PortfoliosController < ApplicationController
   end
 
   def show
+    @skills = Skill.all
   end
 
   def destroy
@@ -76,5 +77,6 @@ class PortfoliosController < ApplicationController
     end
     def set_portfolio
       @portfolio_item = Portfolio.find(params[:id])
+      @skills = Skill.all
     end
 end
