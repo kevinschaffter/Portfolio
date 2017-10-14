@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="nav">
       <%= link_to "Home", root_path, class: "nav-link sliding-middle-out" %>
-      <%= link_to "About Me", about_me_path, class: "nav-link sliding-middle-out" %>
+      <%= link_to "About me", about_me_path, class: 'nav-link sliding-middle-out', 'data-toggle': 'modal', 'data-target': '#aboutModal' %>
       <%= link_to "Portfolio", portfolios_path, class: "nav-link sliding-middle-out" %>
       <%= link_to "Blog", blogs_path, class: "nav-link active sliding-middle-out" %> 
       <%= link_to "Tech News", tech_news_path, class: "nav-link sliding-middle-out" %> 

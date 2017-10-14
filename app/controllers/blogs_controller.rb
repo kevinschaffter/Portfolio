@@ -13,6 +13,8 @@ class BlogsController < ApplicationController
       @blogs = Blog.Published.recent.page(params[:page]).per(10)
     end
     @page_title = "My Portfolio Blog"
+
+    @skills = Skill.all
   end
 
   # GET /blogs/1

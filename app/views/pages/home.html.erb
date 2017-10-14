@@ -4,6 +4,12 @@
   <hr class="home-hr lead animated fadeInUp shadow-text">
   <p class="lead animated fadeInUp home-text shadow-text">Miami based full-stack developer available for hire</p>
   <p class="lead animated fadeInUp">
-    <%= link_to "About Me", about_me_path, class: "btn btn-md btn-info home-btn home-hover" %>
+
+    <%= link_to "About me", about_me_path, class: 'btn btn-primary home-btn', 'data-toggle': 'modal', 'data-target': '#aboutModal' %>
+
+    <%= render 'shared/about_modal' %>
+
   </p>
 </div>
+
+
