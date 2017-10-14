@@ -10,11 +10,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700|Montserrat:400,500,600" rel="stylesheet">
 
-    <%= stylesheet_link_tag 'mdb', 'application', 'animation', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'mdb', 'application', 'animation', 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= favicon_link_tag 'favicons/favicon.ico' %>
 
-    <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -22,6 +21,8 @@
 
     <%= render 'shared/blog_nav' %>
     <%= render 'shared/blog_masthead' %>
+    <%= render 'shared/about_modal' %>
+
 
     <div class="container">
 

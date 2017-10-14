@@ -107,6 +107,10 @@ h6, .h6 {
 
 .masthead-brand {
   margin-bottom: 0;
+  margin-right: 7%;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 22px
 }
 
 .nav-masthead .nav-link {
@@ -152,7 +156,7 @@ h6, .h6 {
 }
 
 .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+  margin-left: 0.7rem;
 }
 
 .nav-masthead .active {
@@ -223,7 +227,7 @@ h6, .h6 {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 70rem;
+    width: 100%;
   }
 }
 
@@ -268,6 +272,14 @@ h6, .h6 {
 .app-footer {
   color: white;
   font-size: 13.5px;
+}
+
+@media (min-width: 10em) { 
+.mastfoot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -346,8 +358,34 @@ h6, .h6 {
 
 .home-hr {
   background: white;
-  width: 40%;
+  width: 60%;
 }
+
+@media (min-width: 720px) { 
+.home-hr {
+    width: 45%;
+  }
+}
+
+@media (min-width: 885px) { 
+.home-hr {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1300px) { 
+.home-hr {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1700px) { 
+.home-hr {
+    width: 25%;
+  }
+}
+
+
 
 
 .home-btn {
@@ -382,6 +420,12 @@ h6, .h6 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 335px) { 
+  .home-header {
+    font-size: 2.2em;
+  }
+}
+
 @include media-breakpoint-up(sm) {
   .home-header {
     font-size: 3em;
@@ -403,30 +447,49 @@ h6, .h6 {
 
 .home-subtitle {
   font-family: Montserrat;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: left;
-  margin-left: 32.5%;
+  margin-left: 10.5%;
+  margin-top: 20px;
 }
+
 
 @include media-breakpoint-up(sm) {
   .home-subtitle {
     font-size: 1.55em;
     text-align: left;
-    margin-left: 32.5%;
+    margin-left: 28%;
   }
 }
 
 @include media-breakpoint-up(md) {
   .home-subtitle {
     font-size: 1.6em;
-    margin-left: 32.5%;
+    margin-left: 28.5%;
   }
 }
+
 
 @include media-breakpoint-up(lg) {
   .home-subtitle {
     font-size: 1.8em;
-    margin-left: 32.5%;
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 1250px ) {
+  .home-subtitle {
+    font-size: 1.55em;
+    text-align: left;
+    margin-left: 38% !important;
+  }
+}
+
+@media (min-width: 1900px ) {
+  .home-subtitle {
+    font-size: 1.55em;
+    text-align: left;
+    margin-left: 43% !important;
   }
 }
 
@@ -436,9 +499,14 @@ h6, .h6 {
   font-family: 'Open Sans';
 }
 
-@include media-breakpoint-up(sm) {
+@media (max-width: 400px) {
   .home-text {
-    font-size: 16px;
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 445px) {
+  .home-text {
+    font-size: 15px;
   }
 }
 
@@ -559,5 +627,44 @@ h6, .h6 {
 .modal-dialog {
     max-width: 1000px;
     margin: 30px auto;
+  }
+}
+
+/* NAVBAR */
+
+                
+.top-nav-collapse {
+    background-color: #82b1ff !important; 
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #82b1ff !important;
+    } 
+}
+
+h5 {
+    letter-spacing: 3px;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px; 
+    } 
+}
+
+@media (min-width: 992px) { 
+.container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 0px) { 
+.site-wrapper-inner {
+    vertical-align: middle;
   }
 }
