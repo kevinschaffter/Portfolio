@@ -5,6 +5,7 @@ class PortfoliosController < ApplicationController
   
   def index
     @portfolio_items = Portfolio.by_position
+    @skills = Skill.all
   end
 
   def sort

@@ -22,10 +22,20 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active {
+  
+  background: rgba(239, 156, 83, 1) !important;
+  outline: none !important;
+  border: 0 !important;
+}
+
 .btn {
   cursor: pointer;
 }
-
 
 .contact-btn > a {
   color: #fff !important;
@@ -340,13 +350,6 @@ h6, .h6 {
 }
 
 
-@media (min-width: 576px) {
-.modal-dialog {
-    max-width: 1000px;
-    margin: 30px auto;
-  }
-}
-
 .home-btn {
   margin-top: 8px;
   text-transform: uppercase;
@@ -552,3 +555,9 @@ h6, .h6 {
   margin-right: 10px;
 }
 
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+}

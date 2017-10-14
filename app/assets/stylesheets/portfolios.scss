@@ -176,3 +176,24 @@ footer p {
   border-radius: 40px !important;
   text-align: center;
 }
+
+/* MODAL */
+
+.modal-body {
+  padding: 33px;
+}
+
+.modal-header {
+  padding: 10px;
+}
+
+.close-btn {
+  margin-right: 10px;
+}
+
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+}
