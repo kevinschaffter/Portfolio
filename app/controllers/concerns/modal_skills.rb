@@ -6,6 +6,6 @@ module ModalSkills
   end
 
   def set_skills
-    @skills = Skill.all
+    @skills = Skill.all 
   end
 end

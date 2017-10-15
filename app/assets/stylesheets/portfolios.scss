@@ -154,10 +154,12 @@ footer p {
   margin-bottom: 25px;
   width: 54%;
   background-color: rgba(239, 156, 83, 1);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .url-btn:hover {
-  background: rgba(239, 156, 83, 0.85);
+  background: #4e8de1;
 }
 
 @media (max-width: 430px) {
