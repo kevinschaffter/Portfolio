@@ -5,7 +5,6 @@ class PortfoliosController < ApplicationController
   
   def index
     @portfolio_items = Portfolio.by_position
-    @skills = Skill.all
   end
 
   def sort
@@ -52,7 +51,6 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @skills = Skill.all
   end
 
   def destroy

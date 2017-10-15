@@ -13,8 +13,6 @@ class BlogsController < ApplicationController
       @blogs = Blog.Published.recent.page(params[:page]).per(10)
     end
     @page_title = "My Portfolio Blog"
-
-    @skills = Skill.all
   end
 
   # GET /blogs/1
@@ -29,7 +27,6 @@ class BlogsController < ApplicationController
     else
       redirect_to blogs_path, notice: "You are not authorized to access this page"
     end
-    @skills = Skill.all
   end
 
   # GET /blogs/new
