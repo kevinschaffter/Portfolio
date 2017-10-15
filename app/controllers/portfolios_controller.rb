@@ -75,6 +75,5 @@ class PortfoliosController < ApplicationController
     end
     def set_portfolio
       @portfolio_item = Portfolio.find(params[:id])
-      @skills = Skill.all
     end
 end

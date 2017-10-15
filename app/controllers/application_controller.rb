@@ -6,4 +6,5 @@ class ApplicationController < ActionController::Base
   include DefaultPageContent
   include SetSource
   include SetCopyright
+  include ModalSkills
 end
