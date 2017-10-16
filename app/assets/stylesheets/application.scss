@@ -258,7 +258,7 @@ h6, .h6 {
 min-height: 100%;
 min-width: 1180px;
 
-/* Set up proportionate scaling */
+/* proportionate scaling */
 width: 100%;
 height: auto;
 
@@ -400,9 +400,8 @@ left: 0;
   text-transform: uppercase;
   font-weight: 600;
   text-shadow: none;
-  padding: 12px; 
-  background: none;
-  border: 4px solid #ecc844;
+  padding: 13px; 
+  background: #ecc844;
   border-radius: 0px;
 }
 
@@ -416,8 +415,7 @@ left: 0;
   font-weight: 600;
   text-shadow: none;
   padding: 12px; 
-  background: none;
-  border: 4px solid #68c54a;
+  background: #68c54a;
   border-radius: 0px;
 }
 
@@ -445,13 +443,13 @@ left: 0;
 
 @include media-breakpoint-up(md) {
   .home-header {
-    font-size: 3.2em;
+    font-size: 3.4em;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .home-header {
-    font-size: 3.4em;
+    font-size: 4em;
   }
 }
 
@@ -529,7 +527,7 @@ left: 0;
 
 @include media-breakpoint-up(lg) {
   .home-text {
-    font-size: 19px;
+    font-size: 22px;
   }
 }
 
