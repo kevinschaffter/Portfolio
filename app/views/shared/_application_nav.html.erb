@@ -7,12 +7,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
             <div class="navbar-nav mr-auto">
-              <%= link_to "Home", root_path, class: "nav-link nav-item" %>
               <%= link_to "About me", about_me_path, class: 'nav-link nav-item', 'data-toggle': 'modal', 'data-target': '#aboutModal' %>
               <%= link_to "Portfolio", portfolios_path, class: "nav-link nav-item" %>
-              <%= link_to "Tech News", tech_news_path, class: "nav-link nav-item" %> 
-              <%= link_to "Contact", contact_path, class: "nav-link nav-item" %> 
-              <%= login_helper 'nav-link' %>
+              <%= link_to "Contact", contact_path, class: "nav-link nav-item" %>
             </div>
             <form class="form-inline">
                 
