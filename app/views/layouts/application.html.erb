@@ -2,15 +2,13 @@
 <html>
   <head>
 
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer> </script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700|Montserrat:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600,700|Montserrat:400,500,600,700" rel="stylesheet">
 
     <META name="keywords" content= "<%= @seo_keywords %>" />
 
@@ -25,13 +23,11 @@
   <div class="site-wrapper-inner">
     <div class="cover-container">
 
-      <%= image_tag(
+      <%#= image_tag(
         'Home.jpeg', 
-        id: 'background',
+        id: 'background'
       ) 
-      %>
-
-      <%= render "shared/application_nav" %>
+      %> 
 
       <%= render "shared/about_modal" %>
 

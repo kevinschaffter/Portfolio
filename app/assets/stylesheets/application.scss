@@ -1,6 +1,9 @@
 @import "bootstrap";
 @import "gritter";
 
+$primary-btn: #4e8de1;
+$nav-color: #5ba5c1;
+
 /*
  * Globals
  */
@@ -10,6 +13,10 @@ a,
 a:focus,
 a:hover {
   color: #fff;
+}
+
+#buffer-extension-hover-button {
+  display: none !important;
 }
 
 /* Custom default button */
@@ -46,18 +53,17 @@ a:hover {
  * Base structure
  */
 
-
 html,
 body {
   height: 100%;
-  font-family: "Open Sans", sans serif;
+  font-family: "Open Sans", "sans serif";
+  background-color: #5ba5c1;
 }
 
 body {
   color: #fff;
-  text-align: center;
+  // text-align: left;
   font-size: 1.03em;
-  
 }
 
 .shadow-text {
@@ -79,12 +85,12 @@ h6, .h6 {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+  // -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+  //         box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .cover-container {
   margin-right: auto;
@@ -93,7 +99,8 @@ h6, .h6 {
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  width: 45%;
+  align-self: center;
 }
 
 
@@ -107,11 +114,22 @@ h6, .h6 {
 
 .masthead-brand {
   margin-bottom: 0;
-  margin-right: 7%;
+  margin-right: 50%;
   font-family: Montserrat;
   font-weight: 600;
   font-size: 22px
 }
+
+@media (max-width: 990px) { 
+  .masthead-brand {
+    margin-bottom: 0;
+    margin-right: 0%;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px
+  }
+}
+
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
@@ -178,7 +196,7 @@ h6, .h6 {
  */
 
 .cover {
-  padding: 0 1.5rem;
+  padding-left: 3.5em;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -264,7 +282,7 @@ height: auto;
 
 /* Set up positioning */
 position: fixed;
-top: 0;
+top: -40px;
 left: 0;
 }
 
@@ -346,7 +364,6 @@ left: 0;
   padding: 5px 7px 5px 7px;
   background: rgba(83, 145, 221, 0.04);
   box-shadow: 0 0.1px 0.2px 0 rgba(0, 0, 0, 0.2), 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .card-block p {
@@ -365,32 +382,57 @@ left: 0;
 
 /* Homepage */
 
+.home-container {
+  display: flex;
+}
+
+.right-photo {
+  flex: 1;
+  height: 100vh;
+  background-image: url(./test3.png);
+  background-size: cover;
+  width: 80%;
+}
+
+.contact {
+  float: right;
+  margin-top: 21px;
+  margin-right: 21px;
+  font-weight: 700;
+
+}
+
+.contact a:hover {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
 .home-hr {
   background: white;
-  width: 60%;
+  width: 5em;
 }
 
 @media (min-width: 720px) { 
 .home-hr {
-    width: 45%;
+    width: 12em;
   }
 }
 
 @media (min-width: 885px) { 
 .home-hr {
-    width: 40%;
+    width: 12em;
   }
 }
 
 @media (min-width: 1300px) { 
 .home-hr {
-    width: 30%;
+    width: 14em;
   }
 }
 
 @media (min-width: 1700px) { 
 .home-hr {
-    width: 20%;
+    width: 20em;;
   }
 }
 
@@ -399,59 +441,85 @@ left: 0;
   margin-top: 8px;
   text-transform: uppercase;
   font-weight: 600;
+  color: #f6ca5a;
   text-shadow: none;
   padding: 12px; 
-  background: none;
-  border: 4px solid #ecc844;
+  // background-color: $primary-btn;
   border-radius: 0px;
+  border: 5px solid #f6ca5a;
+  -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .home-btn:hover {
-  background: #ecc844;
+  background: #f6ca5a;
 }
 
 .portfolio-btn {
   margin-top: 8px;
   text-transform: uppercase;
   font-weight: 600;
+  color: #f6ca5a;
   text-shadow: none;
   padding: 12px; 
-  background: none;
-  border: 4px solid #68c54a;
+  // background-color: $primary-btn;
   border-radius: 0px;
+  border: 5px solid #7dc871;
+  -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .portfolio-btn:hover {
-  background: #68c54a;
+  background: #7dc871;
 }
 
 
 .home-header {
-  font-size: 2.7em;
+  font-size: 5em;
   margin-bottom: 20px;
+  color: #FFF;
+  font-weight: 700;
 }
 
 @media (max-width: 335px) { 
-  .home-header {
-    font-size: 2.2em;
-  }
-}
-
-@include media-breakpoint-up(sm) {
   .home-header {
     font-size: 3em;
   }
 }
 
+// @include media-breakpoint-up(sm) {
+//   .home-header {
+//     font-size: 4em;
+//   }
+// }
+
 @include media-breakpoint-up(md) {
   .home-header {
-    font-size: 3.2em;
+    font-size: 3em;
   }
 }
 
-@include media-breakpoint-up(lg) {
+@media (max-width: 992px) { 
   .home-header {
-    font-size: 3.4em;
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1191px) { 
+  .home-header {
+    font-size: 3.8em;
+  }
+}
+
+@media (min-width: 1238px) { 
+  .home-header {
+    font-size: 4.3em;
+  }
+}
+
+@media (min-width: 1362px) { 
+  .home-header {
+    font-size: 5em;
   }
 }
 
@@ -460,8 +528,9 @@ left: 0;
   font-family: Montserrat;
   font-size: 1.3em;
   text-align: left;
-  margin-left: 10.5%;
   margin-top: 20px;
+  color: #FFF;
+  font-weight: 600;
 }
 
 
@@ -469,14 +538,12 @@ left: 0;
   .home-subtitle {
     font-size: 1.55em;
     text-align: left;
-    margin-left: 28%;
   }
 }
 
 @include media-breakpoint-up(md) {
   .home-subtitle {
     font-size: 1.6em;
-    margin-left: 28.5%;
   }
 }
 
@@ -484,23 +551,20 @@ left: 0;
 @include media-breakpoint-up(lg) {
   .home-subtitle {
     font-size: 1.8em;
-    margin-left: 30%;
   }
 }
 
 @media (min-width: 1250px ) {
   .home-subtitle {
-    font-size: 1.55em;
+    font-size: 1.8em;
     text-align: left;
-    margin-left: 38% !important;
   }
 }
 
 @media (min-width: 1900px ) {
   .home-subtitle {
-    font-size: 1.55em;
+    font-size: 1.8em;
     text-align: left;
-    margin-left: 43% !important;
   }
 }
 
@@ -508,6 +572,7 @@ left: 0;
   font-size: 17px;
   font-weight: 400px;
   font-family: 'Open Sans';
+  color: #ecf0f1;
 }
 
 @media (max-width: 400px) {
@@ -552,7 +617,7 @@ left: 0;
 }
 
 .about-btn {
-  background-color: #85b4fb !important;
+  background-color: $primary-btn !important;
   border: 0px;
   margin-right: 10px;
   border-radius: 0px;
@@ -646,14 +711,14 @@ left: 0;
 
                 
 .top-nav-collapse {
-    background-color: #36629B !important; 
+    background-color: $nav-color !important; 
 }
 .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+    background: $nav-color !important;
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #36629B !important;
+        background: $nav-color !important;
     } 
 }
 
@@ -682,11 +747,11 @@ h5 {
 }
 
 .contact-btn-style {
-  background-color: #7fc25b;
+  background-color: $primary-btn;
   border: none;
 }
 
 .contact-btn-style:hover {
-  background-color: #7fc25b;
+  background-color: $primary-btn;
   border: none;
 }
