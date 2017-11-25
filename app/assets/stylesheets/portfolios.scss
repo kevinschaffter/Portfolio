@@ -2,9 +2,9 @@
 @import "jquery-ui";
 @import "gritter";
 
-$nav-color: #459AD0;
-$primary-btn: #4971cc;
-$secondary-btn: #3CC0D3;
+$primary-btn: #4e8de1;
+$nav-color: #5ba5c1;
+$secondary-btn: #7dc871;
 
 
 body {
@@ -147,6 +147,11 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+  color: #FFF;
+}
+
+footer a {
+  color: #FFF;
 }
 
 .portfolio-card {
@@ -183,6 +188,11 @@ footer p {
 }
 
 .btn-secondary:hover {
+  background-color: $secondary-btn !important;
+  border: 0px;
+}
+
+.btn-secondary:focus {
   background-color: $secondary-btn !important;
   border: 0px;
 }

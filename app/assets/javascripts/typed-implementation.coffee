@@ -5,7 +5,8 @@ ready = ->
       "Landing Pages"
       "Portfolio Sites"
       "User Interfaces"
-      "Fun Things"
+      "Fun Web Things"
+      "Time Machines"
     ]
     typeSpeed: 80
     loop: true
