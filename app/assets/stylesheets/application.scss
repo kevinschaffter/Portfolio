@@ -394,6 +394,13 @@ left: 0;
   width: 80%;
 }
 
+
+@media (max-width: 830px) { 
+.right-photo {
+    display: none;
+  }
+}
+
 .contact {
   float: right;
   margin-top: 21px;
@@ -487,11 +494,11 @@ left: 0;
   }
 }
 
-// @include media-breakpoint-up(sm) {
-//   .home-header {
-//     font-size: 4em;
-//   }
-// }
+@include media-breakpoint-up(sm) {
+  .home-header {
+    font-size: 4em;
+  }
+}
 
 @include media-breakpoint-up(md) {
   .home-header {
